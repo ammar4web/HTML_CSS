@@ -303,10 +303,21 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 991px) {
+  .about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .about .about-content .image {
   position: relative;
   width: 250px;
   height: 375px;
+}
+@media (max-width: 991px) {
+  .about .about-content .image {
+    margin: 0 auto 60px;
+  }
 }
 .about .about-content .image::after {
   content: "";
@@ -328,6 +339,12 @@ body {
   left: -20px;
   background-color: #ebeced;
   z-index: -1;
+}
+@media (max-width: 991px) {
+  .about .about-content .image::before,
+  .about .about-content .image::after {
+    display: none;
+  }
 }
 .about .about-content .image img {
   max-width: 100%;
