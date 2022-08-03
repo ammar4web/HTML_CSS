@@ -1,3 +1,9 @@
+/* Start Variables */
+:root {
+  --main-color: #10cab7;
+}
+/* End Variables */
+
 /* Start Global Rules */
 * {
   -webkit-box-sizing: border-box;
@@ -41,7 +47,6 @@ body {
   padding: 20px;
 }
 .header .row {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -52,12 +57,12 @@ body {
   position: relative;
 }
 /* Start icon */
-.header .links:hover .icon span:nth-child(2) {
-  width: 100%;
-}
 .header .links:hover ul {
   display: flex;
   flex-direction: column;
+}
+.header .links:hover .icon span:nth-child(2) {
+  width: 100%;
 }
 .header .links .icon {
   width: 30px;
@@ -100,6 +105,9 @@ body {
   right: 5px;
   top: -20px;
 }
+.header .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
 .header .links ul li a {
   display: block;
   padding: 15px;
@@ -110,10 +118,9 @@ body {
 .header .links ul li a:hover {
   padding-left: 25px;
 }
-.header .links ul li:not(:last-child) a {
-  border-bottom: 1px solid #ddd;
-}
 /* End Header */
+
+/* Start Landing Section */
 .landing {
   background-image: url(../images/landing.jpg);
   background-size: cover;
@@ -133,7 +140,7 @@ body {
   margin: 0;
   font-weight: bold;
   font-size: 50px;
-  color: #10cab7;
+  color: var(--main-color);
 }
 .landing .intro-text p {
   font-size: 19px;
@@ -157,7 +164,7 @@ body {
   text-align: center;
 }
 .features .feat i {
-  color: #10cab7;
+  color: var(--main-color);
 }
 .features .feat h3 {
   font-weight: 800;
