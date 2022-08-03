@@ -1,0 +1,28 @@
+/* Start Features */
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  .feat {
+    padding: 20px;
+    text-align: center;
+    i {
+      color: #10cab7;
+    }
+    h3 {
+      font-weight: 800;
+      margin: 30px 0;
+    }
+    p {
+      line-height: 1.8;
+      color: #777;
+      font-size: 17px;
+    }
+  }
+}
+/* End Features */
