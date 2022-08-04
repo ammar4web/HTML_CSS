@@ -290,4 +290,84 @@ body {
   margin-bottom: 0;
 }
 
-/* End Portfolio *//*# sourceMappingURL=mainFromSass.css.map */
+/* End Portfolio */
+/* Start About */
+.about {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.about .about-content {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.about .about-content .image {
+  position: relative;
+  width: 250px;
+  height: 375px;
+}
+@media (max-width: 991px) {
+  .about .about-content .image {
+    margin: 0 auto 60px;
+  }
+}
+.about .about-content .image::after {
+  content: "";
+  width: 120px;
+  height: 300px;
+  position: absolute;
+  top: -40px;
+  right: -150px;
+  border-left: 80px solid #10cab7;
+  border-bottom: 80px solid #10cab7;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .about .about-content .image::after {
+    display: none;
+  }
+}
+.about .about-content .image::before {
+  content: "";
+  width: 100px;
+  height: calc(100% + 80px);
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  background-color: #ebeced;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .about .about-content .image::before {
+    display: none;
+  }
+}
+.about .about-content .image img {
+  max-width: 100%;
+}
+.about .about-content .text {
+  flex-basis: calc(100% - 500px);
+}
+.about .about-content p:first-of-type {
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.about .about-content p:last-of-type {
+  line-height: 2;
+  color: #777;
+}
+.about .about-content hr {
+  width: 50%;
+  display: inline-block;
+  border-color: #10cab7;
+}
+
+/* End About *//*# sourceMappingURL=mainFromSass.css.map */
