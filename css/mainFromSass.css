@@ -27,7 +27,6 @@
 }
 
 /* End Components */
-/* Start Layout */
 /* Start Global Rules */
 * {
   box-sizing: border-box;
@@ -142,8 +141,6 @@ body {
 }
 
 /* End Header */
-/* Start Layout */
-/* Start Sections */
 /* Start Landing Section */
 .landing {
   background-image: url(../images/landing.jpg);
@@ -426,4 +423,18 @@ body {
   color: #2c4755;
 }
 
-/* End Contact *//*# sourceMappingURL=mainFromSass.css.map */
+/* End Contact */
+/* Start Footer */
+.footer {
+  background-color: #2c4755;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.footer span {
+  font-weight: bold;
+  color: #10cab7;
+}
+
+/* End Footer *//*# sourceMappingURL=mainFromSass.css.map */
