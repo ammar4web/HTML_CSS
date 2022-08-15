@@ -154,7 +154,9 @@ body {
   top: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-  width: 320px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   max-width: 100%;
 }
 .landing .intro-text h1 {
